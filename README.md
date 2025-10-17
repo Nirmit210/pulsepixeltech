@@ -71,23 +71,22 @@ A complete, production-ready e-commerce platform specialized in digital electron
 
 ## 🌐 Production Deployment
 
-### 🚀 One-Click Monorepo Deployment (Recommended)
-Deploy frontend + backend together in 3 minutes:
+### 🚂 Railway + Vercel Deployment (Recommended)
+Complete deployment with free PostgreSQL database in 5 minutes:
 
-**📋 See [MONOREPO_DEPLOY.md](./MONOREPO_DEPLOY.md) for 3-minute deployment**
+**📋 See [RAILWAY_DEPLOY.md](./RAILWAY_DEPLOY.md) for Railway + Vercel deployment**
 
-### Alternative: Separate Deployments
-Deploy frontend and backend as separate projects:
-
-**📋 See [DEPLOYMENT.md](./DEPLOYMENT.md) for complete deployment guide**
-**✅ See [DEPLOYMENT_CHECKLIST.md](./DEPLOYMENT_CHECKLIST.md) for step-by-step checklist**
+### Alternative Options
+- **📋 [MONOREPO_DEPLOY.md](./MONOREPO_DEPLOY.md)** - Monorepo deployment (3 minutes)
+- **📋 [DEPLOYMENT.md](./DEPLOYMENT.md)** - Separate deployments (complete guide)
+- **✅ [DEPLOYMENT_CHECKLIST.md](./DEPLOYMENT_CHECKLIST.md)** - Step-by-step checklist
 
 ### Recommended Production Stack
-- **Deployment**: Vercel (monorepo or separate)
-- **Database**: Supabase (PostgreSQL with real-time features)
-- **AI**: SambaNova (for chatbot intelligence)
+- **Hosting**: Vercel (Next.js + Node.js)
+- **Database**: Railway (Free PostgreSQL - 1GB storage)
+- **AI**: SambaNova (Intelligent chatbot)
 - **Monitoring**: Vercel Analytics
-- **Cost**: $0 (using free tiers)
+- **Total Cost**: $0 (using free tiers)
 - Git
 
 ### 1. Clone Repository

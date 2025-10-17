@@ -63,8 +63,10 @@ NEXT_PUBLIC_APP_URL=https://your-frontend-url.vercel.app
 Your e-commerce platform will be live!
 
 ## Need Database?
-Use Supabase (free):
-1. Go to supabase.com
-2. Create new project
-3. Copy connection string
+Use Railway (free):
+1. Go to railway.app
+2. Create new project → PostgreSQL
+3. Copy connection string from Variables
 4. Use as DATABASE_URL in backend settings
+
+**More Options**: See [FREE_DATABASE_OPTIONS.md](./FREE_DATABASE_OPTIONS.md) for alternatives

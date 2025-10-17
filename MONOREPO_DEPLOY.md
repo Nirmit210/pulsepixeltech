@@ -2,19 +2,15 @@
 
 ## ✨ Deploy Frontend + Backend Together (3 minutes)
 
-### Step 1: Setup Database (1 minute)
-Choose one free option:
+### Step 1: Setup Railway Database (1 minute)
 
-**Option A: Supabase (Recommended)**
-1. Go to https://supabase.com
+**Railway PostgreSQL (Free - Recommended)**
+1. Go to https://railway.app
 2. Sign up with GitHub
-3. Create new project
-4. Go to Settings → Database → Copy connection string
+3. "Start a New Project" → "Provision PostgreSQL"
+4. Click PostgreSQL service → Variables tab → Copy DATABASE_URL
 
-**Option B: Neon**
-1. Go to https://neon.tech  
-2. Sign up with GitHub
-3. Create database → Copy connection string
+**✨ See [RAILWAY_DEPLOY.md](./RAILWAY_DEPLOY.md) for detailed Railway + Vercel guide**
 
 ### Step 2: Deploy to Vercel (2 minutes)
 1. Go to https://vercel.com
@@ -29,7 +25,7 @@ After deployment, go to Settings → Environment Variables and add:
 
 ```
 NODE_ENV=production
-DATABASE_URL=your_postgresql_connection_string_from_step1
+DATABASE_URL=paste_your_railway_database_url_here
 JWT_SECRET=your_super_secret_jwt_key_here_make_it_very_long_and_secure
 SAMBANOVA_API_KEY=1c0e0109-1ee0-456a-8470-ae17fa1643e6
 EMAIL_HOST=smtp.gmail.com
