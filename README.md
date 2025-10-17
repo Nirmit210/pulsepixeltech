@@ -71,22 +71,23 @@ A complete, production-ready e-commerce platform specialized in digital electron
 
 ## 🌐 Production Deployment
 
-### Quick Deploy to Vercel
-This project is optimized for Vercel deployment with zero configuration:
+### 🚀 One-Click Monorepo Deployment (Recommended)
+Deploy frontend + backend together in 3 minutes:
 
-1. **Backend**: Deploy to Vercel with PostgreSQL database
-2. **Frontend**: Deploy to Vercel with automatic optimization  
-3. **Database**: Use Supabase or Neon for managed PostgreSQL
+**📋 See [MONOREPO_DEPLOY.md](./MONOREPO_DEPLOY.md) for 3-minute deployment**
+
+### Alternative: Separate Deployments
+Deploy frontend and backend as separate projects:
 
 **📋 See [DEPLOYMENT.md](./DEPLOYMENT.md) for complete deployment guide**
 **✅ See [DEPLOYMENT_CHECKLIST.md](./DEPLOYMENT_CHECKLIST.md) for step-by-step checklist**
 
 ### Recommended Production Stack
-- **Frontend**: Vercel (Next.js optimized)
-- **Backend**: Vercel (Node.js serverless)
+- **Deployment**: Vercel (monorepo or separate)
 - **Database**: Supabase (PostgreSQL with real-time features)
 - **AI**: SambaNova (for chatbot intelligence)
 - **Monitoring**: Vercel Analytics
+- **Cost**: $0 (using free tiers)
 - Git
 
 ### 1. Clone Repository
