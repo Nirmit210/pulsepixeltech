@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { motion } from 'framer-motion';
 import axios from 'axios';
@@ -15,7 +15,7 @@ import SmartSearchBar from '@/components/search/SmartSearchBar';
 import SearchResultsSummary from '@/components/search/SearchResultsSummary';
 import { FunnelIcon, Squares2X2Icon, ListBulletIcon } from '@heroicons/react/24/outline';
 
-export default function ProductsPage() {
+function ProductsContent() {
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -360,5 +360,21 @@ export default function ProductsPage() {
 
       <Footer />
     </div>
+  );
+}
+
+export default function ProductsPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+        <Header />
+        <div className="flex items-center justify-center min-h-[60vh]">
+          <LoadingSpinner size="lg" />
+        </div>
+        <Footer />
+      </div>
+    }>
+      <ProductsContent />
+    </Suspense>
   );
 }
