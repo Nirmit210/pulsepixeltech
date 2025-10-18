@@ -1,6 +1,24 @@
 # 🚀 Vercel Deployment Guide
 
-## Deploy Frontend + Backend Together (5 minutes)
+## Deploy Frontend + Backend (5 minutes)
+
+### Option A: Separate Deployments (Recommended - More Reliable)
+
+#### Deploy Backend First:
+1. Go to https://vercel.com → "New Project"
+2. Import `Nirmit210/pulsepixeltech`
+3. **Set Root Directory**: `backend`
+4. **Framework Preset**: Other
+5. Deploy
+
+#### Deploy Frontend Second:
+1. Go to https://vercel.com → "New Project" 
+2. Import `Nirmit210/pulsepixeltech` (again)
+3. **Set Root Directory**: `frontend`
+4. **Framework Preset**: Next.js
+5. Deploy
+
+### Option B: Monorepo Deployment (Advanced)
 
 ### Step 1: Setup Free PostgreSQL Database (2 minutes)
 
@@ -22,15 +40,40 @@
 3. Create PostgreSQL database
 4. Copy connection string
 
-### Step 2: Deploy to Vercel (2 minutes)
+### Step 2: Deploy to Vercel (Alternative - Monorepo)
 1. Go to https://vercel.com
 2. Login with GitHub
 3. "New Project" → Import `Nirmit210/pulsepixeltech`
 4. Keep root directory as default
 5. Click "Deploy"
 
-### Step 3: Add Environment Variables (1 minute)
-After deployment, go to Settings → Environment Variables:
+### Step 3: Add Environment Variables
+
+#### For Backend Project:
+```
+NODE_ENV=production
+DATABASE_URL=paste_your_database_connection_string_here
+JWT_SECRET=pulsepixeltech_super_secret_jwt_key_for_production_make_it_very_long_and_secure_2024
+SAMBANOVA_API_KEY=1c0e0109-1ee0-456a-8470-ae17fa1643e6
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USER=your_email@gmail.com
+EMAIL_PASS=your_gmail_app_password
+PAYMENT_SIMULATION_DELAY=1000
+PAYMENT_SUCCESS_RATE=98
+MAX_FILE_SIZE=5242880
+UPLOAD_PATH=./uploads
+FRONTEND_URL=https://your-frontend-project.vercel.app
+```
+
+#### For Frontend Project:
+```
+NEXT_PUBLIC_API_URL=https://your-backend-project.vercel.app
+NEXT_PUBLIC_APP_NAME=PulsePixelTech
+NEXT_PUBLIC_APP_URL=https://your-frontend-project.vercel.app
+```
+
+#### For Monorepo (if using Option B):
 
 ```
 NODE_ENV=production
