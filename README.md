@@ -71,14 +71,14 @@ A complete, production-ready e-commerce platform specialized in digital electron
 
 ## 🚀 Production Deployment
 
-### Deploy to Vercel + Railway (5 minutes)
-Complete deployment with frontend + backend on Vercel and free PostgreSQL on Railway:
+### Deploy to Vercel (5 minutes)
+Complete deployment with frontend + backend on Vercel and free PostgreSQL database:
 
 **📋 See [DEPLOY.md](./DEPLOY.md) for complete deployment guide**
 
 ### Production Stack
 - **Hosting**: Vercel (Frontend + Backend together)
-- **Database**: Railway (Free PostgreSQL - 1GB storage)
+- **Database**: Aiven/ElephantSQL/Render (Free PostgreSQL options)
 - **AI**: SambaNova (Intelligent chatbot)
 - **Total Cost**: $0 (using free tiers)
 - Git
