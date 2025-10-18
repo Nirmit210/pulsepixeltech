@@ -69,23 +69,17 @@ A complete, production-ready e-commerce platform specialized in digital electron
 - Node.js (v18+)
 - PostgreSQL
 
-## 🌐 Production Deployment
+## 🚀 Production Deployment
 
-### 🚂 Railway + Vercel Deployment (Recommended)
-Complete deployment with free PostgreSQL database in 5 minutes:
+### Deploy to Vercel + Railway (5 minutes)
+Complete deployment with frontend + backend on Vercel and free PostgreSQL on Railway:
 
-**📋 See [RAILWAY_DEPLOY.md](./RAILWAY_DEPLOY.md) for Railway + Vercel deployment**
+**📋 See [DEPLOY.md](./DEPLOY.md) for complete deployment guide**
 
-### Alternative Options
-- **📋 [MONOREPO_DEPLOY.md](./MONOREPO_DEPLOY.md)** - Monorepo deployment (3 minutes)
-- **📋 [DEPLOYMENT.md](./DEPLOYMENT.md)** - Separate deployments (complete guide)
-- **✅ [DEPLOYMENT_CHECKLIST.md](./DEPLOYMENT_CHECKLIST.md)** - Step-by-step checklist
-
-### Recommended Production Stack
-- **Hosting**: Vercel (Next.js + Node.js)
+### Production Stack
+- **Hosting**: Vercel (Frontend + Backend together)
 - **Database**: Railway (Free PostgreSQL - 1GB storage)
 - **AI**: SambaNova (Intelligent chatbot)
-- **Monitoring**: Vercel Analytics
 - **Total Cost**: $0 (using free tiers)
 - Git
 
